@@ -264,6 +264,7 @@ please make sure to add a `README.md` file that follow the same construction as 
 | 70    | <a href="https://github.com/ndleah/python-mini-project/Expense_Tracker/">Expense Tracker | Expense Tracker is a Python application designed to help users keep track of their daily expenses | [Darshan Patil](https://github.com/darshan8850) |
 | 71    | <a href="https://github.com/ndleah/python-mini-project/Lazy_Pong/">Lazy Pong | This is a simple implementation of the classic Pong game in Python using the Pygame library | [dar8900](https://github.com/dar8900) |
 | 72     | [Chess Game](https://github.com/ndleah/python-mini-project/tree/main/Chess_Game)            | A simple chess game that you can play with your friend.                                                                                                                                                                                                                                                      | [Abhi Bhullar](https://github.com/userabhibhullar)                   |
+| 73     | [Color Game](https://github.com/ndleah/python-mini-project/tree/main/Color_Game)            | This is a simple color recignition game made using Python.                                                                                                                                                                                                                                                      | [Prenses Metin](https://github.com/PrensesMTN)                   |
 
 ## ![image](IMG/like.svg) Our Contributors
 
