@@ -265,6 +265,7 @@ please make sure to add a `README.md` file that follow the same construction as 
 | 71    | <a href="https://github.com/ndleah/python-mini-project/Lazy_Pong/">Lazy Pong | This is a simple implementation of the classic Pong game in Python using the Pygame library | [dar8900](https://github.com/dar8900) |
 | 72    | <a href="https://github.com/ndleah/python-mini-project/mnist_digit_recognizer/">MNIST Digit Recognizer | This is MNIST handwritten digit recognition project developed using Keras library in Python. | [Pavan Kumar Singh](https://github.com/pksX01) |
 | 73    | <a href="https://github.com/hisham-slm/python-mini-project">Translation | In this python project you can translate from any language to other using googletrans library | [hisham-slm](https://github.com/hisham-slm) |
+| 74    | <a href="https://github.com/ndleah/python-mini-project/Simple_Image_resize/">Image resize |  resize images in a diractory | [amarsree](https://github.com/amarsree) |
 
 ## ![image](IMG/like.svg) Our Contributors
 
