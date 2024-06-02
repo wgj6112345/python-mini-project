@@ -3,6 +3,9 @@ import tkinter as tk
 from tkinter import messagebox
 from difflib import get_close_matches
 
+
+data = json.load(open("data.json"))
+
 # Use the absolute path to the data.json file
 file_path = "Enter the path of json file "
 
@@ -100,4 +103,3 @@ def main():
 #setting default focus to main function
 if __name__ == "__main__":
     main()
-    
