@@ -23,6 +23,8 @@ def get_products(products_id):
 
 @app.route('/create/', methods=('GET', 'POST'))
 def create():
+    form_data = {'title': '', 'price': ''}
+
     if request.method == 'POST':
         title = request.form['title']
         price = request.form['price']
@@ -38,7 +40,10 @@ def create():
             conn.commit()
             conn.close()
             return redirect(url_for('index'))
-    return render_template('create.html')
+        
+        form_data = {'title': '', 'price': ''}
+
+    return render_template('create.html', request=request, form_data=form_data) 
 
 
 @app.route('/<int:id>/edit/', methods=('GET', 'POST'))
@@ -57,9 +62,7 @@ def edit(id):
 
         else:
             conn = get_db_connection()
-            conn.execute('UPDATE products SET title = ?, price = ?'
-                         ' WHERE id = ?',
-                         (title, price, id))
+            conn.execute('UPDATE products SET title = ?, price = ?', ' WHERE id = ?', (title, price, id))
             conn.commit()
             conn.close()
             return redirect(url_for('index'))
@@ -84,3 +87,7 @@ def index():
     products = conn.execute('SELECT * FROM products').fetchall()
     conn.close()
     return render_template('index.html', products=products)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
