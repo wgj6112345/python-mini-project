@@ -1,0 +1,11 @@
+[project]
+name = "speech-to-text"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pipwin>=0.5.2",
+    "pyttsx3>=2.99",
+    "speechrecognition>=3.14.3",
+]
