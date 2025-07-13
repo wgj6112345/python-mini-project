@@ -11,11 +11,13 @@ todos = []
 @app.route('/')
 def index():
     return render_template('index.html', todos=todos)
+
 @app.route('/add', methods=['POST'])
 def add():
     task = request.form['todo']
     todos.append({"task":task, "done":False})
     return redirect(url_for('index'))
+
 @app.route('/remove/<int:index>', methods=['GET'])
 def remove(index):
     del todos[index]
@@ -33,4 +35,5 @@ def edit(index):
         return redirect(url_for('index'))
 
 #run the app
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)

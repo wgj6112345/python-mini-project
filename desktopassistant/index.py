@@ -71,18 +71,18 @@ if __name__=="__main__":
             speak("According to Wikipedia")
             print(results)
             speak(results)
-       
+
         
                 
 
         elif 'open youtube' in query:
-             speak('Which youtube video do you want to watch ?')
-             mkv = takeCommand()
-             speak(f"playing {mkv}")
-             print(f"playing {mkv}...")
-             pywhatkit.playonyt(mkv, open_video=True)
+            speak('Which youtube video do you want to watch ?')
+            mkv = takeCommand()
+            speak(f"playing {mkv}")
+            print(f"playing {mkv}...")
+            pywhatkit.playonyt(mkv, open_video=True)
         elif 'open google' or 'search on google' in query:
-             webbrowser.open("https://google.com")
+            webbrowser.open("https://google.com")
         elif 'open stackoverflow' in query:
             webbrowser.open("https://stackoverflow.com")
         
