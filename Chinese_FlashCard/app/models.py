@@ -13,14 +13,14 @@ def extract_data(url=cfg['url']) -> str:
     """
     return requests.get(url).text
 
-def transform_data():
-    """ parse html document
-    return :: tree of Python object
-    """
-    return bs(extract_data(),"html.parser")
+# def transform_data():
+#     """ parse html document
+#     return :: tree of Python object
+#     """
+#     return bs(extract_data(),"html.parser")
     
 
-def data_list(soup=transform_data()) -> list:
+def data_list(soup=bs(extract_data(),"html.parser")) -> list:
     """ match tag with find_all method
     return :: string list
     """
