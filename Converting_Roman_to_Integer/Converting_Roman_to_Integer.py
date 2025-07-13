@@ -1,7 +1,13 @@
 import sys
 
 
-romanStr = sys.argv[1]
+
+try:
+    romanStr = sys.argv[1]
+except IndexError as e:
+    print(f"你忘了输入参数了，参数是罗马数字")
+    sys.exit(1)
+
 romanStr = str(romanStr)
 dict = {
     'I':1,
