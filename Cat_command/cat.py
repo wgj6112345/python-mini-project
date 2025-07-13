@@ -66,11 +66,11 @@ def main():
 
         logger.error(e)
 
-        exit(1)
+        exit(code=1)
 
     except KeyboardInterrupt:
 
-        logger.error('\nInterrupt')
+        logger.error(message='\nInterrupt')
 
 '''
     Start the program
